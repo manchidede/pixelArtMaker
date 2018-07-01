@@ -5,7 +5,7 @@ body {
 
 h1 {
     font-family: Monoton;
-    font-size: 3.5em;
+    font-size: 3em;
     margin: 0.2em;
     color: #6b1060;
 }
@@ -33,39 +33,27 @@ table {
     height: 450px;
     background-color: #e4eadc;
     -webkit-border-radius: 14px;
-
--moz-border-radius: 14px;
-
-border-radius: 14px;
-
--webkit-box-shadow: 0px 0px 3px #000000;
-
--moz-box-shadow: 0px 0px 3px #000000;
-
-box-shadow: 0px 0px 3px #000000;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+    -moz-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 3px #000000;
 }
 
 tr {
     height: 20px;
 }
-
 td {
     width: 20px;
 }
-/* #pixelCanvas{
-    width: 40vw;
-} */
-
 input[type=number] {
     border: none;
     width: 6em;
     border-radius: 10px;
     padding: 3px 5px;
     -webkit-box-shadow: 0px 0px 3px #000000;
-
--moz-box-shadow: 0px 0px 3px #000000;
-
-box-shadow: 0px 0px 3px #000000;
+    -moz-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 3px #000000;
 }
 input[type=submit]{
     background-color: #4a6131;
@@ -75,10 +63,8 @@ input[type=submit]{
     padding: 3px 5px;
     font-size: 1.1em;
     -webkit-box-shadow: 0px 0px 3px #000000;
-
--moz-box-shadow: 0px 0px 3px #000000;
-
-box-shadow: 0px 0px 3px #000000;
+    -moz-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 3px #000000;
 }
 input[type=submit]:hover{
     background-color: #5a8a27;
@@ -86,19 +72,41 @@ input[type=submit]:hover{
 }
 
 .container{
-    width: 60%;
+    min-width: 400px;
+    width: 80%;
     margin: 0 auto;
     padding: 10px 0px;
     -webkit-border-radius: 14px;
-
--moz-border-radius: 14px;
-
-border-radius: 14px;
-
--webkit-box-shadow: 0px 0px 3px #000000;
-
--moz-box-shadow: 0px 0px 3px #000000;
-
-box-shadow: 0px 0px 3px #000000;
-background-color: #e4eadc;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+    -moz-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 3px #000000;
+    background-color: #e4eadc;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 2.5em;
+        margin: 0.2em;
+    }
+    input[type=submit]{
+        margin: 10px auto;
+        display: block;
+    }
+    .container{
+        padding: 5px 0px;
+    }
+}
+@media only screen and (max-width: 600px){
+    h1 {
+        font-size: 2em;
+        margin: 0.2em;
+    }
+}
+@media only screen and (max-width: 500px){
+    table {
+        width: 400px;
+        height: 400px;
+    }
 }

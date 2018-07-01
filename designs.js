@@ -1,8 +1,7 @@
-// Select color input
+
 // Select size input
 $( document ).ready(function() {
-    // $("#pixelCanvas").css("height", $("#pixelCanvas").innerWidth()/2)
-// When size is submitted by the user, call makeGrid()
+// When size is submitted by the user, execute
 $("form").submit(function(e){
     let gridH = $("#inputHeight").val();
     let gridW = $("#inputWeight").val();
@@ -20,6 +19,7 @@ $("form").submit(function(e){
     e.preventDefault();
 });
 
+// Select color input
 $("#pixelCanvas").click(function(e){
 
     var clicks = $(e.target).data('clicks');
@@ -34,16 +34,3 @@ $("#pixelCanvas").click(function(e){
 
 
 });
-
-// $(document).ready(function() {
-//     $("#tblDatatr:has(td)").mouseover(function(e) {
-//     $(this).css("cursor", "pointer");
-//     });
-//     $("#tblDatatr:has(td)").click(function(e) {
-//     $("#tblData td").removeClass("highlight");
-//     var clickedCell= $(e.target).closest("td");
-//     clickedCell.addClass("highlight");
-//     $("#spnText").html(
-//     'Clicked table cell value is: <b> ' + clickedCell.text() + '</b>');
-//     });
-//    });
